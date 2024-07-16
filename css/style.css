@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+  color: #5e493a;
+}
+
+body.vania-overflow {
+  overflow-x: auto;
+}
+
+a {
+  color: #fb6e14;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #bf4c03;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn.btn-md {
+  padding: 10px 20px !important;
+}
+
+.btn.btn-lg {
+  padding: 18px 36px !important;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-primary {
+  background: #fb6e14;
+  color: #fff;
+  border: 2px solid #fb6e14;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #f16104 !important;
+  border-color: #f16104 !important;
+}
+
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #fb6e14;
+  border: 2px solid #fb6e14;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:active {
+  background: #fb6e14;
+  color: #fff;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active {
+  box-shadow: none;
+}
+
+#vania-home {
+  min-height: 700px;
+  background: #fff url(../images/loader.gif) no-repeat center center;
+}
+
+#vania-home .flexslider {
+  border: none;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+#vania-home .flexslider .vania-text {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 50%;
+  margin-top: -212px;
+  text-align: center;
+}
+
+#vania-home .flexslider .vania-text h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 300px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 992px) {
+  #vania-home .flexslider .vania-text h1 {
+    font-size: 100px;
+  }
+}
+
+#vania-home .flexslider .vania-text h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-home .flexslider .vania-text h2 {
+    font-size: 20px;
+  }
+}
+
+#vania-home .flexslider .vania-text h2 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-transform: none;
+}
+
+#vania-home .flexslider .vania-text h2 a {
+  color: #fb6e14;
+}
+
+#vania-home .flexslider .slides li {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#vania-home .flexslider .vania-overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+  background: #000;
+}
+
+#vania-home .flexslider .flex-control-nav,
+#vania-home .flexslider .flex-direction-nav {
+  display: none;
+}
+
+.vania-main-nav {
+  position: relative;
+  background: #fff;
+}
+
+.vania-main-nav.vania-shadow {
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.vania-main-nav:before,
+.vania-main-nav:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #e6e6e6;
+}
+
+.vania-main-nav:before {
+  top: 2px;
+}
+
+.vania-main-nav:after {
+  bottom: 2px;
+}
+
+.vania-main-nav .vania-menu-1,
+.vania-main-nav .vania-menu-2,
+.vania-main-nav .vania-logo {
+  vertical-align: middle;
+  float: left;
+  line-height: 0;
+}
+
+.vania-main-nav .vania-menu-1 a,
+.vania-main-nav .vania-menu-2 a,
+.vania-main-nav .vania-logo a {
+  padding: 35px 10px;
+  color: #130d08;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  display: inline;
+}
+
+.vania-main-nav .vania-menu-1 a:hover,
+.vania-main-nav .vania-menu-1 a:focus,
+.vania-main-nav .vania-menu-1 a:active,
+.vania-main-nav .vania-menu-2 a:hover,
+.vania-main-nav .vania-menu-2 a:focus,
+.vania-main-nav .vania-menu-2 a:active,
+.vania-main-nav .vania-logo a:hover,
+.vania-main-nav .vania-logo a:focus,
+.vania-main-nav .vania-logo a:active {
+  outline: none;
+  text-decoration: none;
+}
+
+.vania-main-nav .vania-menu-1 a.active,
+.vania-main-nav .vania-menu-2 a.active,
+.vania-main-nav .vania-logo a.active {
+  color: #fb6e14;
+}
+
+.vania-main-nav .vania-menu-1 {
+  text-align: right;
+  width: 40.33%;
+}
+
+.vania-main-nav .vania-menu-1 a {
+  vertical-align: middle;
+}
+
+.vania-main-nav .vania-logo {
+  text-align: center;
+  width: 19.33%;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.vania-main-nav .vania-logo a {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+}
+
+.vania-main-nav .vania-menu-2 {
+  text-align: left;
+  width: 40.33%;
+}
+
+/*--------------------------------------------------------------
+# Brands
+--------------------------------------------------------------*/
+.brands {
+  padding-top: 20px;
+}
+
+.brands .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+  width: 8rem;
+}
+
+.brands .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.brands .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.brands .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.brands .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc451;
+}
+
+#vania-container {
+  position: relative;
+  z-index: 10;
+}
+
+#vania-footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 7em 0;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#vania-footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#vania-footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--light-color);
+}
+
+@media screen and (max-width: 768px) {
+  #vania-footer {
+    padding: 5em 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #vania-footer {
+    height: inherit;
+    position: relative;
+  }
+}
+
+.vania-social {
+  padding: 0;
+  margin: 0;
+}
+
+.vania-social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.vania-social li a {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.vania-social li a i {
+  font-size: 30px;
+}
+
+.vania-social li a:hover,
+.vania-social li a:active,
+.vania-social li a:focus {
+  outline: none;
+  text-decoration: none;
+}
