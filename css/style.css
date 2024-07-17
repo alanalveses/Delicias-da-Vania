@@ -343,10 +343,280 @@ p {
   background-color: #ffc451;
 }
 
-#vania-container {
-  position: relative;
-  z-index: 10;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+
+#vania-featured {
+  padding: 7em 0;
+  background: #130d08 url(../images/wood_1.png) repeat;
 }
+
+@media screen and (max-width: 768px) {
+  #vania-featured {
+    padding: 5em 0;
+  }
+}
+
+#vania-featured .vania-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+  color: #fff;
+}
+
+#vania-featured .vania-heading .heading:before,
+#vania-featured .vania-heading .heading::before {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  content: "";
+  background: url(../images/icons/favorito.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -32px;
+}
+
+#vania-featured .vania-heading .sub-heading {
+  color: #a99c92;
+}
+
+#vania-featured .vania-grid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+
+#vania-featured .vania-grid h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+#vania-featured .vania-grid p {
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+#vania-featured .vania-grid .pricing {
+  font-size: 40px;
+  display: block;
+  padding-top: 20px;
+}
+
+#vania-featured .vania-grid .pricing:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  left: 50%;
+  margin-left: -20px;
+  background: #fb6e14;
+}
+
+#vania-featured .vania-grid .arrow-left:before,
+#vania-featured .vania-grid .arrow-left::before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  left: 0;
+  margin-left: -15px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+
+  #vania-featured .vania-grid .arrow-left:before,
+  #vania-featured .vania-grid .arrow-left::before {
+    right: auto !important;
+    left: 15px !important;
+    top: 0 !important;
+    margin-top: -15px !important;
+    margin-left: 0px !important;
+    border-top: none !important;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid #f5f5f5 !important;
+  }
+}
+
+#vania-featured .vania-grid .arrow-right:before,
+#vania-featured .vania-grid .arrow-right::before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  right: 0;
+  margin-right: -15px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #f5f5f5;
+}
+
+@media screen and (max-width: 992px) {
+
+  #vania-featured .vania-grid .arrow-right:before,
+  #vania-featured .vania-grid .arrow-right::before {
+    right: auto !important;
+    left: 0 !important;
+    margin-left: -15px !important;
+    border-left: none !important;
+    border-right: 15px solid #f5f5f5 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #vania-featured .vania-grid .arrow-right:before,
+  #vania-featured .vania-grid .arrow-right::before {
+    right: auto !important;
+    left: 15px !important;
+    top: 0 !important;
+    margin-top: -15px !important;
+    margin-left: 0px !important;
+    border-top: none !important;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid #f5f5f5 !important;
+  }
+}
+
+#vania-featured .vania-grid>.vania-v-half {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+
+@media screen and (max-width: 992px) {
+  #vania-featured .vania-grid>.vania-v-half {
+    width: 100%;
+  }
+}
+
+#vania-featured .vania-grid>.vania-v-half .vania-text {
+  background: #f5f5f5;
+}
+
+#vania-featured .vania-grid>.vania-v-half .vania-special-1 {
+  background: #faebcd;
+}
+
+#vania-featured .vania-grid>.vania-v-half .vania-special-1.arrow-left:before,
+#vania-featured .vania-grid>.vania-v-half .vania-special-1.arrow-left::before {
+  border-right: 15px solid #faebcd;
+}
+
+@media screen and (max-width: 768px) {
+
+  #vania-featured .vania-grid>.vania-v-half .vania-special-1.arrow-left:before,
+  #vania-featured .vania-grid>.vania-v-half .vania-special-1.arrow-left::before {
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid #faebcd !important;
+  }
+}
+
+#vania-featured .vania-grid>.vania-v-half>.vania-v-col-2 {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+#vania-featured .vania-grid>.vania-v-half>.vania-v-col-2.vania-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-featured .vania-grid>.vania-v-half>.vania-v-col-2.vania-bg-img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #vania-featured .vania-grid>.vania-v-half>.vania-v-col-2 {
+    width: 100%;
+  }
+}
+
+#vania-featured .vania-grid>.vania-v-half>.vania-h-row-2 {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+
+#vania-featured .vania-grid>.vania-v-half>.vania-h-row-2>.vania-v-col-2 {
+  width: 50%;
+  position: relative;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-featured .vania-grid>.vania-v-half>.vania-h-row-2>.vania-v-col-2 {
+    width: 100%;
+  }
+}
+
+#vania-featured .vania-grid>.vania-v-half>.vania-h-row-2>.vania-v-col-2.vania-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-featured .vania-grid>.vania-v-half>.vania-h-row-2>.vania-v-col-2.vania-bg-img {
+    height: 200px;
+  }
+}
+
+#vania-featured .vania-grid>.vania-v-half>.vania-h-row-2.vania-reversed .vania-bg-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #vania-featured .vania-grid>.vania-v-half>.vania-h-row-2.vania-reversed .vania-bg-img {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    bottom: inherit;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 
 #vania-footer {
   width: 100%;
@@ -409,4 +679,140 @@ p {
 .vania-social li a:focus {
   outline: none;
   text-decoration: none;
+}
+
+
+.vania-social {
+  padding: 0;
+  margin: 0;
+}
+
+.vania-social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.vania-social li a {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.vania-social li a i {
+  font-size: 30px;
+}
+
+.vania-social li a:hover,
+.vania-social li a:active,
+.vania-social li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+#vania-offcanvas,
+#vania-container,
+.vania-nav-toggle,
+#vania-footer {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#vania-container,
+.vania-nav-toggle,
+#vania-footer {
+  z-index: 2;
+  position: relative;
+}
+
+#vania-offcanvas {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 275px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.75em 1.25em;
+  -moz-transform: translateX(-275px);
+  -webkit-transform: translateX(-275px);
+  -ms-transform: translateX(-275px);
+  -o-transform: translateX(-275px);
+  transform: translateX(-275px);
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+
+#vania-offcanvas a {
+  display: block;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 7px 0;
+}
+
+#vania-offcanvas a:hover,
+#vania-offcanvas a:focus,
+#vania-offcanvas a:active {
+  outline: none;
+  text-decoration: none;
+  color: #fb6e14;
+}
+
+#vania-offcanvas a.active {
+  color: #fb6e14;
+}
+
+
+@media screen and (max-width: 768px) {
+  #vania-offcanvas {
+    display: block;
+  }
+}
+
+.offcanvas-visible #vania-offcanvas {
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+
+  #vania-container,
+  #vania-footer,
+  .vania-nav-toggle {
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+
+.offcanvas-visible #vania-container,
+.offcanvas-visible #vania-footer,
+.offcanvas-visible .vania-nav-toggle {
+  -moz-transform: translateX(275px);
+  -webkit-transform: translateX(275px);
+  -ms-transform: translateX(275px);
+  -o-transform: translateX(275px);
+  transform: translateX(275px);
+}
+
+.js-sticky {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .js-sticky {
+    display: none;
+  }
 }
