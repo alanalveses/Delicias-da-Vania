@@ -708,7 +708,7 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Menus
+# Menus Section
 --------------------------------------------------------------*/
 
 #vania-menus {
@@ -882,6 +882,129 @@ p {
   font-size: 20px;
   color: #fb6e14;
 }
+
+/*--------------------------------------------------------------
+# Event Section
+--------------------------------------------------------------*/
+
+#vania-events {
+  padding: 7em 0;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#vania-events>.vania-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+
+#vania-events>.container {
+  z-index: 10;
+  position: relative;
+}
+
+#vania-events .vania-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+  color: #fff;
+}
+
+#vania-events .vania-heading .heading:before,
+#vania-events .vania-heading .heading::before {
+  height: 64px;
+  width: 74px;
+  position: absolute;
+  content: "";
+  background: url(../images/icons/chefe-de-cozinha.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -24px;
+}
+
+#vania-events .vania-heading .sub-heading {
+  color: #a99c92;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-events {
+    padding: 5em 0;
+  }
+}
+
+#vania-events .vania-event {
+  background: #fff;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#vania-events .vania-event:before {
+  border: 2px solid #e6e6e6;
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+  z-index: 0;
+}
+
+#vania-events .vania-event h3,
+#vania-events .vania-event .vania-event-meta,
+#vania-events .vania-event p,
+#vania-events .vania-event .btn {
+  position: relative;
+  z-index: 2;
+}
+
+#vania-events .vania-event h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#vania-events .vania-event .vania-event-meta {
+  margin-bottom: 20px;
+  display: block;
+  color: gray;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#vania-events .vania-event .vania-event-meta:after,
+#vania-events .vania-event .vania-event-meta::after {
+  background: #bfbfbf;
+  background: #fb6e14;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  margin-left: -20px;
+}
+
+#vania-events .vania-event p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#vania-events .vania-event p:last-child {
+  margin-bottom: 0;
+}
+
+#vania-events .vania-event .btn {
+  margin-bottom: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
