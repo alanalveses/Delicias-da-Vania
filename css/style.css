@@ -1005,6 +1005,82 @@ p {
   margin-bottom: 0;
 }
 
+/*--------------------------------------------------------------
+# Contact Season
+--------------------------------------------------------------*/
+
+
+#vania-contact {
+  padding: 7em 0;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-contact {
+    padding: 5em 0;
+  }
+}
+
+#vania-contact h3 {
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  #vania-contact {
+    padding: 5em 0;
+  }
+}
+
+#vania-contact .vania-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+}
+
+#vania-contact .vania-heading .heading:before,
+#vania-contact .vania-heading .heading::before {
+  height: 61px;
+  width: 65px;
+  position: absolute;
+  content: "";
+  background: url(../images/icons/coffe.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -24px;
+}
+
+#vania-contact .vania-heading .sub-heading {
+  color: #a99c92;
+}
+
+#vania-contact .vania-social {
+  padding: 0;
+  margin: 0;
+}
+
+#vania-contact .vania-social li {
+  padding: 0;
+  margin: 0;
+}
+
+#vania-contact .vania-contact-info {
+  padding: 0;
+  margin: 0 0 1.5em 0;
+}
+
+#vania-contact .vania-contact-info li {
+  position: relative;
+  padding: 0;
+  margin: 0 0 1.5em 0;
+  padding-left: 50px;
+  list-style: none;
+}
+
+#vania-contact .vania-contact-info li i {
+  position: absolute;
+  top: .4em;
+  left: 0;
+}
 
 /*--------------------------------------------------------------
 # Footer
