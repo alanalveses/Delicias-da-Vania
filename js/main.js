@@ -38,9 +38,9 @@
     };
   
     /**
-     * Clients Slider
+     * Brands Slider
      */
-    new Swiper(".clients-slider", {
+    new Swiper(".brands-slider", {
       speed: 400,
       loop: true,
       autoplay: {
